@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Feature\Contacts\Create\" />
+    <Folder Include="Feature\PingMe\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nibro.Framework.StartupExtension" Version="1.0.0" />
+  </ItemGroup>
+
+
+</Project>
