@@ -9,11 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1FD32776-D66
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6BC82C13-C03E-4D47-B9F8-D768B6424229}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDiary.Contacts.Core", "MyDiary.Contacts.Core\MyDiary.Contacts.Core.csproj", "{E3083D21-2396-4F57-A8A2-380C235270C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDiary.Contacts.Core", "src\MyDiary.Contacts.Core\MyDiary.Contacts.Core.csproj", "{E3083D21-2396-4F57-A8A2-380C235270C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDiary.Contacts.Infrastructure", "MyDiary.Contacts.Infrastructure\MyDiary.Contacts.Infrastructure.csproj", "{D426DB86-3C50-4943-9B7F-B2A2DEF61D50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDiary.Contacts.Infrastructure", "src\MyDiary.Contacts.Infrastructure\MyDiary.Contacts.Infrastructure.csproj", "{D426DB86-3C50-4943-9B7F-B2A2DEF61D50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDiary.Contacts.Web", "MyDiary.Contacts.Web\MyDiary.Contacts.Web.csproj", "{52E25D8F-DC79-4C7F-9B58-1AB6270A6046}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDiary.Contacts.Web", "src\MyDiary.Contacts.Web\MyDiary.Contacts.Web.csproj", "{52E25D8F-DC79-4C7F-9B58-1AB6270A6046}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
