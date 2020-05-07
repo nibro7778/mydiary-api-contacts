@@ -5,11 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Feature\Contacts\Create\" />
-    <Folder Include="Feature\PingMe\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="MediatR" Version="8.0.1" />
     <PackageReference Include="Nibro.Framework.StartupExtension" Version="1.0.0" />
   </ItemGroup>
 

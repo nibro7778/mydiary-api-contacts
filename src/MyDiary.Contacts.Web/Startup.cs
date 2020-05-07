@@ -14,10 +14,9 @@ namespace MyDiary.Contacts.Web
     {
 
         private static string ServiceName => typeof(Startup).Assembly.GetName().Name;
-        private readonly IWebHostEnvironment _env;
         private readonly IConfiguration _configuration;
 
-        public Startup(IWebHostEnvironment env, ILoggerFactory logger)
+        public Startup(IWebHostEnvironment env)
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
@@ -26,11 +25,6 @@ namespace MyDiary.Contacts.Web
                 .AddEnvironmentVariables();
 
             _configuration = builder.Build();
-            _env = env;
-
-            var log = logger.CreateLogger<Startup>();
-
-            log.LogInformation($"Starting Contacts service in  {env.EnvironmentName} environment");
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -40,7 +34,7 @@ namespace MyDiary.Contacts.Web
                 .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
             services.EnableVersionedApi();
-            services.EnableHealthCheck(_configuration);
+            // services.EnableHealthCheck(_configuration);
             services.EnableSwagger(ServiceName);
 
         }
@@ -56,7 +50,7 @@ namespace MyDiary.Contacts.Web
             app.UseHttpsRedirection();
             app.UseMvcWithDefaultRoute();
 
-            app.UseCustomHealthCheck();
+            // app.UseCustomHealthCheck();
             app.UseCustomSwagger(provider);
         }
     }
