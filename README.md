@@ -1,5 +1,6 @@
 # Mydiary-api-contacts
-This is contacts micro-service for <a href="https://github.com/nibro7778/mydiary">Mydiary App</a>. This micro service contains a set of APIs which are used for managing personal contacts. Contact details are address, email, phone number, etc. Contact service uses domain driven design and We have used SQL Server as back end database.
+This is contacts micro-service for <a href="https://github.com/nibro7778/mydiary">Mydiary App</a>. Purpose of Mydiary App is to learn new technology stack around .NET Core. Contacts micro service contains a set of APIs which are used for managing personal contacts. Contact details are address, email, phone number, etc. Contact service uses domain driven design and We have used SQL Server as back end database.
+
 
 ## Project Status
 
@@ -15,7 +16,5 @@ If you liked the project or if this project helped you, please give a star :wink
 - .NET Core 3.1
 - Docker
 - EF Core
-- Domain driven design
-- Identity Server (Authorization)
-- API gateway (ocelot)
-- RabbitMQ (Public/Subscribe)
+- Mediator
+- FluentValidation
