@@ -2,11 +2,14 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MyDiary.Contacts.Infrastructure.Data;
 using Nibro.Framework.StartupExtension;
+using System.Configuration;
 
 namespace MyDiary.Contacts.Web
 {
@@ -33,6 +36,9 @@ namespace MyDiary.Contacts.Web
             services.AddMvc(options => { options.EnableEndpointRouting = false; })
                 .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
+            services.AddDbContext<AppDbContext>(option =>
+                    option.UseSqlServer(_configuration.GetConnectionString("AppDbContext")));       
+    
             services.EnableVersionedApi();
             // services.EnableHealthCheck(_configuration);
             services.EnableSwagger(ServiceName);

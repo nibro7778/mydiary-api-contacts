@@ -9,11 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1FD32776-D66
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6BC82C13-C03E-4D47-B9F8-D768B6424229}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDiary.Contacts.Core", "src\MyDiary.Contacts.Core\MyDiary.Contacts.Core.csproj", "{E3083D21-2396-4F57-A8A2-380C235270C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDiary.Contacts.Core", "src\MyDiary.Contacts.Core\MyDiary.Contacts.Core.csproj", "{E3083D21-2396-4F57-A8A2-380C235270C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDiary.Contacts.Infrastructure", "src\MyDiary.Contacts.Infrastructure\MyDiary.Contacts.Infrastructure.csproj", "{D426DB86-3C50-4943-9B7F-B2A2DEF61D50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDiary.Contacts.Infrastructure", "src\MyDiary.Contacts.Infrastructure\MyDiary.Contacts.Infrastructure.csproj", "{D426DB86-3C50-4943-9B7F-B2A2DEF61D50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDiary.Contacts.Web", "src\MyDiary.Contacts.Web\MyDiary.Contacts.Web.csproj", "{52E25D8F-DC79-4C7F-9B58-1AB6270A6046}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDiary.Contacts.Web", "src\MyDiary.Contacts.Web\MyDiary.Contacts.Web.csproj", "{52E25D8F-DC79-4C7F-9B58-1AB6270A6046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDiary.Contacts.SharedKernel", "MyDiary.Contacts.SharedKernel\MyDiary.Contacts.SharedKernel.csproj", "{E8F3B6C5-37F7-4A33-9967-5C82C271DB84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{52E25D8F-DC79-4C7F-9B58-1AB6270A6046}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52E25D8F-DC79-4C7F-9B58-1AB6270A6046}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52E25D8F-DC79-4C7F-9B58-1AB6270A6046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8F3B6C5-37F7-4A33-9967-5C82C271DB84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8F3B6C5-37F7-4A33-9967-5C82C271DB84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8F3B6C5-37F7-4A33-9967-5C82C271DB84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8F3B6C5-37F7-4A33-9967-5C82C271DB84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{E3083D21-2396-4F57-A8A2-380C235270C5} = {1FD32776-D669-428E-A460-24CF0D1AB127}
 		{D426DB86-3C50-4943-9B7F-B2A2DEF61D50} = {1FD32776-D669-428E-A460-24CF0D1AB127}
 		{52E25D8F-DC79-4C7F-9B58-1AB6270A6046} = {1FD32776-D669-428E-A460-24CF0D1AB127}
+		{E8F3B6C5-37F7-4A33-9967-5C82C271DB84} = {1FD32776-D669-428E-A460-24CF0D1AB127}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7BBE3F8-3460-4F0B-B720-9E3D1D453892}

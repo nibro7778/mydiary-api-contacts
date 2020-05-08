@@ -7,11 +7,14 @@ using System.Threading.Tasks;
 
 namespace MyDiary.Contacts.Web.Feature.Contacts.Get
 {
+    #region Request
     public class GetContactRequest : IRequest<GetContactResponse>
     {
         public int ContactId { get; set; }
     }
+    #endregion
 
+    #region Response
     public class GetContactResponse
     {
         public string FirstName { get; set; }
@@ -30,7 +33,9 @@ namespace MyDiary.Contacts.Web.Feature.Contacts.Get
         public string FaceBookProfileLink { get; set; }
         public string LinkedInProfileLink { get; set; }
     }
+    #endregion
 
+    #region Validation
     public class GetContactValidator : AbstractValidator<GetContactRequest>
     {
         public GetContactValidator()
@@ -38,7 +43,9 @@ namespace MyDiary.Contacts.Web.Feature.Contacts.Get
             RuleFor(x => x.ContactId).NotEmpty();
         }
     }
+    #endregion
 
+    #region Handle
     public class GetContactHandler : IRequestHandler<GetContactRequest, GetContactResponse>
     {
         public Task<GetContactResponse> Handle(GetContactRequest request, CancellationToken cancellationToken)
@@ -47,4 +54,5 @@ namespace MyDiary.Contacts.Web.Feature.Contacts.Get
             return null;
         }
     }
+    #endregion
 }
