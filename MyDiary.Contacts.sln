@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDiary.Contacts.Infrastruc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDiary.Contacts.Web", "src\MyDiary.Contacts.Web\MyDiary.Contacts.Web.csproj", "{52E25D8F-DC79-4C7F-9B58-1AB6270A6046}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDiary.Contacts.SharedKernel", "MyDiary.Contacts.SharedKernel\MyDiary.Contacts.SharedKernel.csproj", "{E8F3B6C5-37F7-4A33-9967-5C82C271DB84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDiary.Contacts.SharedKernel", "src\MyDiary.Contacts.SharedKernel\MyDiary.Contacts.SharedKernel.csproj", "{E8F3B6C5-37F7-4A33-9967-5C82C271DB84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
