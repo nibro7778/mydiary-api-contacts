@@ -2,6 +2,6 @@
 {
     public class CreateContactResponse
     {
-        public string ContactId { get; set; }
+        public int ContactId { get; set; }
     }
 }
