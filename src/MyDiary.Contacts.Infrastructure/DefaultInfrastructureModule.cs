@@ -1,11 +1,6 @@
 ﻿using Autofac;
+using MyDiary.Contacts.Application;
 using MyDiary.Contacts.Infrastructure.Data;
-using MyDiary.Contacts.Infrastructure.DomainEvents;
-using MyDiary.Contacts.SharedKernel.Interface;
-using System;
-using System.Collections.Generic;
-using System.Reflection;
-using System.Text;
 using Module = Autofac.Module;
 
 namespace MyDiary.Contacts.Infrastructure
@@ -33,8 +28,6 @@ namespace MyDiary.Contacts.Infrastructure
         }
         private void RegisterCommonDependencies(ContainerBuilder builder)
         {
-            builder.RegisterType<DomainEventDispatcher>().As<IDomainEventDispatcher>()
-                .InstancePerLifetimeScope();
             builder.RegisterType<ContactRepository>().As<IRepository>()
                 .InstancePerLifetimeScope();
 

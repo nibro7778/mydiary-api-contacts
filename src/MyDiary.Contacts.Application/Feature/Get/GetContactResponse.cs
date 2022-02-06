@@ -1,9 +1,6 @@
-﻿using MyDiary.Contacts.SharedKernel;
-using System;
-
-namespace MyDiary.Contacts.Core.Entities
+﻿namespace MyDiary.Contacts.Application.Feature.Get
 {
-    public class Contact : BaseEntity
+    public class GetContactResponse
     {
         public string FirstName { get; set; }
         public string MiddleName { get; set; }

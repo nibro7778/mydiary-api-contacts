@@ -15,7 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MyDiary.Contacts.Core\MyDiary.Contacts.Core.csproj" />
+    <ProjectReference Include="..\MyDiary.Contacts.Application\MyDiary.Contacts.Application.csproj" />
+    <ProjectReference Include="..\MyDiary.Contacts.Domain\MyDiary.Contacts.Domain.csproj" />
   </ItemGroup>
 
 </Project>

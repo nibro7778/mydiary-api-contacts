@@ -1,10 +1,7 @@
 ﻿using MediatR;
-using System.Threading;
-using System.Threading.Tasks;
-using MyDiary.Contacts.Application;
 using MyDiary.Contacts.Domain.Entities;
 
-namespace MyDiary.Contacts.Web.Feature.Contacts.Get
+namespace MyDiary.Contacts.Application.Feature.Get
 {
     public class GetContactHandler : IRequestHandler<GetContactRequest, GetContactResponse>
     {
