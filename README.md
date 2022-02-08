@@ -5,7 +5,7 @@ Contacts micro service contains a set of APIs which are used for managing person
 
 <img src="my-diary-contacts.svg"/>
 
- <img src="https://raw.github.com/nibro7778/my-diary-contacts/master/my-diary-contacts.svg">
+ <img src="https://raw.github.com/nibro7778/mydiary-api-contacts/master/my-diary-contacts.svg">
 
 ## Project Status
 
