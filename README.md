@@ -3,6 +3,7 @@ This is contacts micro-service for <a href="https://github.com/nibro7778/mydiary
 
 Contacts micro service contains a set of APIs which are used for managing personal contacts. Contact details like Name, address, email, phone number, etc. Contact service uses domain driven design and clean code architecture. 
 
+<img src="diagram.svg"/>
 
 ## Project Status
 
